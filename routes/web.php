@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +22,8 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/shop', function () {
-    return view('shop');
-});
+Route::get('/shop', [BarangController::class, 'index'])->name('index');
+Route::get('/single', [BarangController::class, 'show'])->name('show');
 Route::get('/contact', function () {
     return view('contact');
 });
