@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Barang;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreBarangRequest;
 use App\Http\Requests\UpdateBarangRequest;
+use App\Models\Category;
 
 class BarangController extends Controller
 {
@@ -15,7 +17,16 @@ class BarangController extends Controller
      */
     public function index()
     {
-        //
+        $title = '';
+        if(request('category')){
+            $category = Category::firstWhere('slug', request('category'));
+            $title = ' in '. $category->name;
+        }
+        return view('shop', [
+            'barangs' => Barang::latest()->filter(request(['category']))->get(),
+            'categories' => Category::all(),
+            'title' => 'Shop' .$title,
+        ]);
     }
 
     /**
@@ -47,7 +58,7 @@ class BarangController extends Controller
      */
     public function show(Barang $barang)
     {
-        //
+        return view('shop-single');
     }
 
     /**
