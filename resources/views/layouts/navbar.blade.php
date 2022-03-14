@@ -54,6 +54,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Supplier</a>
+                    </li>
                 </ul>
             </div>
             <div class="navbar align-self-center d-flex">
