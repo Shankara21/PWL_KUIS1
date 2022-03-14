@@ -14,7 +14,10 @@ class PegawaiFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama_pegawai' => $this->faker->name,
+            'alamat' => $this->faker->address,
+            'telepon' => $this->faker->phoneNumber,
+            'jenis_kelamin' => $this->faker->randomElement(['Laki-laki', 'Perempuan']),
         ];
     }
 }
