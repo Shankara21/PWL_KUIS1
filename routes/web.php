@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +27,5 @@ Route::get('/shop', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::resource('/supplier', SupplierController::class);
+Route::resource('/pegawai', PegawaiController::class);

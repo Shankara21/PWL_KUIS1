@@ -55,13 +55,13 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Customer</a>
+                        <a class="nav-link" href="/customer">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Employee</a>
+                        <a class="nav-link" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Supplier</a>
+                        <a class="nav-link" href="/supplier">Supplier</a>
                     </li>
                 </ul>
             </div>

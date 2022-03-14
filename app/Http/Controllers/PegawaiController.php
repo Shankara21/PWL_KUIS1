@@ -15,7 +15,11 @@ class PegawaiController extends Controller
      */
     public function index()
     {
-        //
+        return view('employee', [
+            'pegawais' => Pegawai::all(),
+            'pegawais2' => Pegawai::where('jenis_kelamin', 'laki-laki')->get(),
+            'pegawai3' => Pegawai::find(9),
+        ]);
     }
 
     /**

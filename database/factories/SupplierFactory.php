@@ -15,7 +15,8 @@ class SupplierFactory extends Factory
     {
         return [
             'nama_supplier' => $this->faker->company(),
-            'alamat' => $this->faker->address(),
+            'asal' => $this->faker->city(),
+            'alamat' => $this->faker->streetAddress(),
             'telepon' => $this->faker->phoneNumber(),
         ];
     }
