@@ -19,8 +19,11 @@ class CreateBarangsTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->string('size');
+            $table->string('brand');
+            $table->string('color');
             $table->integer('price');
             $table->string('image')->nullable();
+            $table->text('description');
             $table->timestamps();
         });
     }
