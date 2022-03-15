@@ -57,17 +57,17 @@
                             <div
                                 class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
-                                    <li><a class="btn btn-success text-white" href="/single"><i
+                                    <li><a class="btn btn-success text-white" href="/single/{{ $barang->slug }}"><i
                                                 class="far fa-heart"></i></a></li>
-                                    <li><a class="btn btn-success text-white mt-2" href="/single"><i
+                                    <li><a class="btn btn-success text-white mt-2" href="/single/{{ $barang->slug }}"><i
                                                 class="far fa-eye"></i></a></li>
-                                    <li><a class="btn btn-success text-white mt-2" href="/single"><i
+                                    <li><a class="btn btn-success text-white mt-2" href="/single/{{ $barang->slug }}"><i
                                                 class="fas fa-cart-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="card-body">
-                            <a href="/single" class="h3 text-decoration-none">{{ $barang->name }}</a>
+                            <a href="/single/{{ $barang->slug }}" class="h3 text-decoration-none">{{ $barang->name }}</a>
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                 <li>{{ $barang->size }}</li>
                                 <li class="pt-2">
@@ -98,18 +98,8 @@
                 @endforeach
             </div>
             <div div="row">
-                <ul class="pagination pagination-lg justify-content-end">
-                    <li class="page-item disabled">
-                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#"
-                            tabindex="-1">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
-                            href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
-                    </li>
+                <ul class="pagination pagination justify-content-end">
+                    {{ $barangs->links() }}
                 </ul>
             </div>
         </div>
@@ -124,10 +114,6 @@
         <div class="row text-center py-3">
             <div class="col-lg-6 m-auto">
                 <h1 class="h1">Our Brands</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    Lorem ipsum dolor sit amet.
-                </p>
             </div>
             <div class="col-lg-9 m-auto tempaltemo-carousel">
                 <div class="row d-flex flex-row">
