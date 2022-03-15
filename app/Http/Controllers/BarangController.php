@@ -23,7 +23,7 @@ class BarangController extends Controller
             $title = ' in '. $category->name;
         }
         return view('shop', [
-            'barangs' => Barang::latest()->filter(request(['category']))->get(),
+            'barangs' => Barang::latest()->filter(request(['category']))->paginate(6),
             'categories' => Category::all(),
             'title' => 'Shop' .$title,
         ]);
@@ -58,7 +58,10 @@ class BarangController extends Controller
      */
     public function show(Barang $barang)
     {
-        return view('shop-single');
+        return view('shop-single', [
+            'title' => 'Shop Detail',
+            'barang' => $barang,
+        ]);
     }
 
     /**

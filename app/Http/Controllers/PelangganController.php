@@ -1,4 +1,4 @@
-, da<?php
+<?php
 
     namespace App\Http\Controllers;
 
@@ -15,7 +15,11 @@
          */
         public function index()
         {
-            //
+            return view('customers', [
+                'pelanggans' => Pelanggan::all(),
+                'pelanggan2' => Pelanggan::where('jenis_kelamin', 'perempuan')->get(),
+                'pelanggan3' => Pelanggan::find(7),
+            ]);
         }
 
         /**
