@@ -86,7 +86,7 @@
                     <img src="{{ asset('img/girl.png') }}" alt="" height="50px">
                     @endif
                 </td>
-                <td>{{$pelanggan3->nama_pegawai}}</td>
+                <td>{{$pelanggan3->nama_pelanggan}}</td>
                 <td>{{$pelanggan3->alamat}}</td>
                 <td>{{$pelanggan3->telepon}}</td>
                 <td>{{$pelanggan3->jenis_kelamin}}</td>
