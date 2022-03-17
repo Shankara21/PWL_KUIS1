@@ -9,7 +9,7 @@
         <thead>
             <th>Id</th>
             <th>Foto</th>
-            <th>Name Supplier</th>
+            <th>Name Pegawai</th>
             <th>Alamat Supplier</th>
             <th>Nomor Telepon</th>
             <th>Jenis Kelamin</th>
@@ -40,7 +40,7 @@
         <thead>
             <th>Id</th>
             <th>Foto</th>
-            <th>Name Supplier</th>
+            <th>Name Pegawai</th>
             <th>Alamat Supplier</th>
             <th>Nomor Telepon</th>
             <th>Jenis Kelamin</th>
@@ -71,7 +71,7 @@
         <thead>
             <th>Id</th>
             <th>Foto</th>
-            <th>Name Supplier</th>
+            <th>Name Pegawai</th>
             <th>Alamat Supplier</th>
             <th>Nomor Telepon</th>
             <th>Jenis Kelamin</th>

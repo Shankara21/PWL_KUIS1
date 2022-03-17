@@ -22,9 +22,9 @@
                     <img src="{{ asset('img/supplier.png') }}" alt="" height="50px">
                 </td>
                 <td>{{$supplier->nama_supplier}}</td>
+                <td>{{$supplier->asal}}</td>
                 <td>{{$supplier->alamat}}</td>
                 <td>{{$supplier->telepon}}</td>
-                <td>{{$supplier->jenis_kelamin}}</td>
             </tr>
             @endforeach
         </tbody>
@@ -37,9 +37,9 @@
             <th>Id</th>
             <th>Foto</th>
             <th>Name Supplier</th>
+            <th>Asal</th>
             <th>Alamat Supplier</th>
             <th>Nomor Telepon</th>
-            <th>Jenis Kelamin</th>
         </thead>
         <tbody>
             @foreach ($suppliers2 as $supplier)
@@ -49,9 +49,10 @@
                     <img src="{{ asset('img/supplier.png') }}" alt="" height="50px">
                 </td>
                 <td>{{$supplier->nama_supplier}}</td>
+                <td>{{ $supplier -> asal }}</td>
                 <td>{{$supplier->alamat}}</td>
                 <td>{{$supplier->telepon}}</td>
-                <td>{{$supplier->jenis_kelamin}}</td>
+
             </tr>
             @endforeach
         </tbody>
@@ -64,9 +65,9 @@
             <th>Id</th>
             <th>Foto</th>
             <th>Name Supplier</th>
+            <th>Asal</th>
             <th>Alamat Supplier</th>
             <th>Nomor Telepon</th>
-            <th>Jenis Kelamin</th>
         </thead>
         <tbody>
             <tr>
@@ -75,9 +76,10 @@
                     <img src="{{ asset('img/supplier.png') }}" alt="" height="50px">
                 </td>
                 <td>{{$suppliers3->nama_supplier}}</td>
+                <td>{{ $suppliers3 -> asal }}</td>
                 <td>{{$suppliers3->alamat}}</td>
                 <td>{{$suppliers3->telepon}}</td>
-                <td>{{$suppliers3->jenis_kelamin}}</td>
+
             </tr>
 
         </tbody>

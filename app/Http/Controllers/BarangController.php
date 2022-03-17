@@ -18,14 +18,14 @@ class BarangController extends Controller
     public function index()
     {
         $title = '';
-        if(request('category')){
+        if (request('category')) {
             $category = Category::firstWhere('slug', request('category'));
-            $title = ' in '. $category->name;
+            $title = ' in ' . $category->name;
         }
         return view('shop', [
             'barangs' => Barang::latest()->filter(request(['category']))->paginate(6),
             'categories' => Category::all(),
-            'title' => 'Shop' .$title,
+            'title' => 'Shop' . $title,
         ]);
     }
 
