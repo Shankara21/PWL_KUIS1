@@ -19,6 +19,7 @@
                 'pelanggans' => Pelanggan::all(),
                 'pelanggan2' => Pelanggan::where('jenis_kelamin', 'perempuan')->get(),
                 'pelanggan3' => Pelanggan::find(7),
+                'title' => 'Pelanggan',
             ]);
         }
 

@@ -19,6 +19,7 @@ class PegawaiController extends Controller
             'pegawais' => Pegawai::all(),
             'pegawais2' => Pegawai::where('jenis_kelamin', 'laki-laki')->get(),
             'pegawai3' => Pegawai::find(9),
+            'title' => 'Peggawai',
         ]);
     }
 
