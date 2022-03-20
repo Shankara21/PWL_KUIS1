@@ -17,7 +17,7 @@ class SupplierController extends Controller
     {
         return view('supplier', [
             'suppliers' => Supplier::all(),
-            'suppliers2' => Supplier::where('asal', 'Denpasar')->get(),
+            'suppliers2' => Supplier::where('asal', 'Bandung')->get(),
             'suppliers3' => Supplier::find(5),
             'title' => 'Supplier',
         ]);

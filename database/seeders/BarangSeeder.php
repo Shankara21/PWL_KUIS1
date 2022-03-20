@@ -24,7 +24,8 @@ class BarangSeeder extends Seeder
                 'price' => 400,
                 'image' => '/img/barang/jordan/j1.jpeg',
                 'description' => 'Sepatu Nike Air Jordan',
-                'category_id' => 4
+                'category_id' => 4,
+                'supplier_id' => 1,
             ],
             [
                 'name' => 'Adidas Black',
@@ -35,7 +36,8 @@ class BarangSeeder extends Seeder
                 'price' => 101,
                 'image' => '/img/barang/adidas/a1.jpeg',
                 'description' => 'Sepatu Adidas Black Original',
-                'category_id' => 4
+                'category_id' => 4,
+                'supplier_id' => 2,
             ],
             [
                 'name' => 'Yosuo Hoodie',
@@ -46,7 +48,8 @@ class BarangSeeder extends Seeder
                 'price' => 35,
                 'image' => '/img/barang/sweather/s1.jpg',
                 'description' => 'Hoodie Yosuo',
-                'category_id' => 1
+                'category_id' => 1,
+                'supplier_id' => 3,
             ],
             [
                 'name' => 'Slim Fit Trouser',
@@ -57,7 +60,8 @@ class BarangSeeder extends Seeder
                 'price' => 35,
                 'image' => '/img/barang/pants/c1.jpg',
                 'description' => 'Celana Panjang',
-                'category_id' => 2
+                'category_id' => 2,
+                'supplier_id' => 4,
             ],
             [
                 'name' => 'Kemeja Flannel',
@@ -68,7 +72,8 @@ class BarangSeeder extends Seeder
                 'price' => 30,
                 'image' => '/img/barang/dress/k1.jpg',
                 'description' => 'Kemeja Flannel Kotak-Kotak',
-                'category_id' => 3
+                'category_id' => 3,
+                'supplier_id' => 5,
             ],
             [
                 'name' => 'Kaos Oblong',
@@ -79,7 +84,8 @@ class BarangSeeder extends Seeder
                 'price' => 25,
                 'image' => '/img/barang/dress/ks1.jpg',
                 'description' => 'Kaos Oblong Hitam',
-                'category_id' => 3
+                'category_id' => 3,
+                'supplier_id' => 6,
             ],
             [
                 'name' => 'Polo Panjang',
@@ -90,7 +96,8 @@ class BarangSeeder extends Seeder
                 'price' => 35,
                 'image' => '/img/barang/dress/polo1.jpg',
                 'description' => 'Polo Lengan Panjang',
-                'category_id' => 3
+                'category_id' => 3,
+                'supplier_id' => 7,
             ],
             [
                 'name' => 'Celana Olahraga',
@@ -101,7 +108,8 @@ class BarangSeeder extends Seeder
                 'price' => 20,
                 'image' => '/img/barang/pants/co1.jpg',
                 'description' => 'Celana Olahraga Hitam',
-                'category_id' => 2
+                'category_id' => 2,
+                'supplier_id' => 8,
             ],
             [
                 'name' => 'Celana Denim',
@@ -112,7 +120,8 @@ class BarangSeeder extends Seeder
                 'price' => 30,
                 'image' => '/img/barang/pants/denim1.jpg',
                 'description' => 'Celana Denim',
-                'category_id' => 2
+                'category_id' => 2,
+                'supplier_id' => 9,
             ],
             [
                 'name' => 'Relaxed Hoodie',
@@ -123,7 +132,8 @@ class BarangSeeder extends Seeder
                 'price' => 35,
                 'image' => '/img/barang/sweather/r1.jpg',
                 'description' => 'Hoodie Relaxed',
-                'category_id' => 1
+                'category_id' => 1,
+                'supplier_id' => 10,
             ],
             [
                 'name' => 'Sleeve Hoodie',
@@ -134,7 +144,8 @@ class BarangSeeder extends Seeder
                 'price' => 40,
                 'image' => '/img/barang/sweather/sl1.jpg',
                 'description' => 'Hoodie Sleeve',
-                'category_id' => 1
+                'category_id' => 1,
+                'supplier_id' => 1,
             ],
 
         ]);
