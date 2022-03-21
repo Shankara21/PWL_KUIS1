@@ -15,8 +15,8 @@ class CreateBarangsTable extends Migration
     {
         Schema::create('barangs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id');
-            $table->foreignId('supplier_id');
+            $table->foreignId('category_id')->constrained();
+            $table->foreignId('supplier_id')->constrained();
             $table->string('name');
             $table->string('slug');
             $table->string('size');
