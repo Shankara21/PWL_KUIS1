@@ -10,7 +10,7 @@
             <th>Id</th>
             <th>Foto</th>
             <th>Name Pegawai</th>
-            <th>Alamat Supplier</th>
+            <th>Alamat Pegawai</th>
             <th>Nomor Telepon</th>
             <th>Jenis Kelamin</th>
         </thead>
